@@ -8,7 +8,7 @@ public:
     {
         #pragma omp parallel for schedule(static)
         {
-            for (uint64_t i=0; i<10; ++i) 
+            for (int i=0; i<10; ++i) 
                 this->crash();
         }
     }
