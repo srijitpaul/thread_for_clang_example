@@ -52,7 +52,7 @@ case ${CXXTEST} in
     CXXFLAGS="$CXXFLAGS -fno-strict-aliasing"
     CXXLD=${CXX}
     if test $ac_openmp = yes; then
-       CXXFLAGS="$CXXFLAGS -Xcompiler -fopenmp"
+       CXXFLAGS="$CXXFLAGS"
     fi
     ;;
   *)
