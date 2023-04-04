@@ -24,6 +24,7 @@ sudo amdgpu-install --usecase=rocm
 1) From `thread_for_clang_example/build`, run `../configure CXX=hipcc CXXFLAGS="-std=c++14 -fno-strict-aliasing -fopenmp"`
 2) After configuring, run `make`.
 3) Clang will raise a segmentation fault.
+
 A segfault will not be raised by not passing the `-fopenmp` CXX flag.
 1) From `thread_for_clang_example/build`, run `../configure CXX=hipcc CXXFLAGS="-std=c++14 -fno-strict-aliasing"`
 2) After configuring, run `make`.
